@@ -1,0 +1,3 @@
+h1 > span.up, h1 > span.down {
+    visibility: hidden;
+}

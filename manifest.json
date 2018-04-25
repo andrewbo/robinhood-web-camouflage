@@ -1,0 +1,42 @@
+{
+  "name": "Robinhood Web Camouflage",
+  "version": "1.0",
+  "description": "A Google Chrome extension that helps you to mask sensitive data on the Robinhood Web App (https://robinhood.com/).",
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "https://robinhood.com/"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://robinhood.com/", "https://robinhood.com/*"],
+      "css": ["robinhood.css"],
+      "js": ["jquery-3.3.1.slim.min.js", "robinhood.js"]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32":  "images/robin-hood-hat-32.png",
+      "48":  "images/robin-hood-hat-48.png",
+      "64":  "images/robin-hood-hat-64.png",
+      "72":  "images/robin-hood-hat-72.png",
+      "96":  "images/robin-hood-hat-96.png",
+      "128": "images/robin-hood-hat-128.png",
+      "256": "images/robin-hood-hat-256.png",
+      "512": "images/robin-hood-hat-512.png"
+    }
+  },
+  "icons": {
+    "32":  "images/robin-hood-hat-32.png",
+    "48":  "images/robin-hood-hat-48.png",
+    "64":  "images/robin-hood-hat-64.png",
+    "72":  "images/robin-hood-hat-72.png",
+    "96":  "images/robin-hood-hat-96.png",
+    "128": "images/robin-hood-hat-128.png",
+    "256": "images/robin-hood-hat-256.png",
+    "512": "images/robin-hood-hat-512.png"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
