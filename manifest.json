@@ -2,7 +2,7 @@
   "name": "Robinhood Web Camouflage",
   "version": "1.0",
   "description": "A Google Chrome extension that helps you to mask sensitive data on the Robinhood Web App (https://robinhood.com/).",
-  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "https://robinhood.com/"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "alarms", "https://robinhood.com/"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
