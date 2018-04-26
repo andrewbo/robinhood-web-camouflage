@@ -37,6 +37,5 @@
     "256": "images/robin-hood-hat-256.png",
     "512": "images/robin-hood-hat-512.png"
   },
-  "options_page": "options.html",
   "manifest_version": 2
 }

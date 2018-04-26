@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <style>
+        body {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
 <body>
-    <button id="go-to-options">Go to options</button>
+    <div style="display: inline-block;">
+        <img src="images/robin-hood-hat-64.png" align="left" style="margin-top: 12px; margin-right: 20px;">
+        <h1>Robinhood Web Camouflage</h1>
+    </div>
+    <h3>I'd like to hide:</h3>
+    <div style="margin-left: 15px;">
+        <p>
+            <label>
+                <input type="checkbox" id="portfolio-value">
+                Portfolio Value
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" id="buying-power">
+                Buying Power
+            </label>
+        </p>
+    </div>
+    <p>
+        <button id="save">Save options</button>
+    </p>
+    <p id="options-save-status" style="color: green;"></p>
     <script src="popup.js"></script>
 </body>
 </html>
